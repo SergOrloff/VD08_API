@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Случайная цитата</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container" style="background: linear-gradient(135deg, PeachPuff, LightYellow);">
+        <h1 style="color: red;">Random Quote \ Случайные цитаты</h1>
+        <p class="quote">"{{ quote }}"</p>
+        <p class="author">- {{ author }}</p>
+
+        <h2>Перевод на русский:</h2>
+        <p class="quote">"{{ translated_quote }}"</p>
+        <p class="author">- {{ translated_author }}</p>
+
+        <!-- Кнопка с иконкой -->
+        <button class="refresh-btn" onclick="window.location.reload();">
+            <i class="fas fa-sync-alt"></i> Get another quote \ Новая случайная цитата
+        </button>
+    </div>
+    </div>
+</body>
+</html>

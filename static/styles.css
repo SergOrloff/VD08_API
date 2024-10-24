@@ -1,0 +1,130 @@
+/* Общие стили */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, LightYellow, GreenYellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Контейнер с цитатой */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Стиль для цитаты */
+.quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Стиль для автора */
+.author {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Стиль для перевода цитаты */
+.translated-quote {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Кнопка обновления */
+.refresh-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Стилизация иконки в кнопке */
+.refresh-btn i {
+    font-size: 22px;
+    animation: rotate 1.5s linear infinite;
+    transition: transform 0.3s ease;
+}
+
+/* Эффекты при наведении на кнопку */
+.refresh-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.refresh-btn:hover i {
+    transform: rotate(360deg);
+}
+
+/* Анимация вращения иконки */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Общие стили для кнопки */
+.refresh-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Иконка в кнопке */
+.refresh-btn i {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+/* Эффекты при наведении */
+.refresh-btn:hover {
+    background: linear-gradient(135deg, #ff5e62, #ff9966);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.refresh-btn:hover i {
+    transform: rotate(360deg);
+}
+
+/* Эффект нажатия */
+.refresh-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
